@@ -181,7 +181,7 @@ namespace mlpalns {
                     }
                 }
 
-                best_obj = best_obj;
+                this->best_obj = best_obj;
                 end_temperature =
                     ((-this->params.sa_params.end_accept_ratio_50p * best_obj) / log(0.5)) / pow(instance_size, this->params.sa_params.magic_number_exponent);
 
